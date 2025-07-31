@@ -1,0 +1,661 @@
+<!doctype html><html><head><style type="text/css">body {
+  font-family: Verdana, sans-serif;
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  radial-gradient(#ffa3a3 0.5px, pink 2px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+}
+
+h1 {
+  color: #0e0b0b;
+  font-size: 35px;
+}
+
+img{
+    border-radius: 30px;
+      user-select: none;
+}
+
+.polaroid{
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.6);
+}
+
+.one {
+  height: 230px;
+  width: 230px;
+  rotate: 0deg;
+    position: absolute;
+  top: 10%;
+  left: 35%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.6);
+}
+.two {
+  height: 230px;
+  width: 230px;
+  rotate: 10deg;
+    position: absolute;
+  top: 30%;
+  left: 35%;
+}
+.three {
+  height: 230px;
+  width: 230px;
+  rotate: 30deg;
+    position: absolute;
+  top: 30%;
+  left: 35%;
+}
+.four {
+    height: 230px;
+  width: 230px;
+  rotate: 15deg;
+    position: absolute;
+  top: 30%;
+  left: 35%;
+}
+.five {
+  height: 230px;
+  width: 230px;
+  rotate: -15deg;
+    position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.stickynote{
+  background-color: rgb(255, 220, 116);
+  height: 150px;
+  width: 160px;
+    rotate: -5deg;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+        text-align: center;
+
+}
+
+
+.notescontent{
+  background-color: rgb(255, 220, 116);
+  height: 150px;
+  width: 150px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+
+}
+
+.note1{
+    position: absolute;
+  top: 55%;
+  left: 80%;
+    background-color: rgb(255, 220, 116);
+  height: 150px;
+  width: 150px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+
+}
+
+
+.note2{
+    position: absolute;
+  top: 70%;
+  left: 20%;
+    background-color: rgb(255, 162, 116);
+  height: 150px;
+  width: 150px;
+     rotate: 5deg;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+
+}
+
+
+.note3{
+    position: absolute;
+  top: 5%;
+  left: 60%;
+    background-color: rgb(141, 222, 220);
+  height: 150px;
+  width: 150px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+
+}
+
+
+.note4{
+    position: absolute;
+  top: 45%;
+  left: 60%;
+    background-color: rgb(255, 161, 222);
+  height: 150px;
+  width: 150px;
+   rotate: -5deg;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+}
+
+.note5{
+    position: absolute;
+  top: 30%;
+  left: 35%;
+    background-color: rgb(255, 161, 222);
+  height: 150px;
+  width: 150px;
+   rotate: -5deg;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
+}
+
+.song1{
+      position: absolute;
+  top: 65%;
+  left: 32%;
+  
+}
+
+
+.song2{
+      position: absolute;
+  top: 76%;
+  left: 32%;
+
+}
+
+
+.song3{
+      position: absolute;
+  top: 75%;
+
+}
+
+.song4{
+      position: absolute;
+  top: 70%;
+left: 65%;
+}
+
+.song5{
+        position: absolute;
+  top: 40%;
+  left: 35%;
+  rotate: 15deg;
+}
+.snone{
+      position: absolute;
+  top: 20%;
+  left: 70%;
+    background-color: rgb(255, 220, 116);
+  height: 150px;
+  width: 300px;
+ rotate: 20deg;
+}
+
+/*second half*/
+body{
+  background-color: #ffa3a3;
+  font-family: Verdana, sans-serif;
+
+}
+
+h1{
+  color: #6e1111;
+  padding: 25px;
+  font-size: 35px;
+}
+
+p { 
+word-break: break-all;
+color: #454545;
+font-size: 19px;
+line-height: 20px;
+margin: 20px;
+}
+
+.more{
+     display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+      position: absolute;
+  top: 90%;
+}
+
+.fonttt{
+  position: absolute;
+  top: -10px;
+}
+
+.card {
+width: 250px;
+height: 100px;
+margin: 10px;
+perspective: 1000px;
+cursor: pointer;
+transition: transform 1s, width 0.3s ease, height 0.3s ease;
+transform-style: preserve-3d;
+box-shadow: 0 5px 9px 0 rgba(0,0,0,0.6);
+background-color: white;
+ border-radius: 10px;
+}
+
+.card:hover{
+height: 110px;
+width: 260px;
+}
+.card.flipped {
+transform: rotateY( 180deg );
+box-shadow: 0 5px 9px 0 rgba(0,0,0,0.6);
+}
+
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+/* padding: 25px;
+ */backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-back {
+transform: rotateY(180deg);
+}
+
+.card-backk{
+  position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f5f5f5;
+ border-radius: 10px;
+ padding: 0;
+}
+
+.emoji1{
+  font-size: 100px;
+    position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.emoji2{
+  font-size: 100px;
+    position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.emoji3{
+  font-size: 100px;
+    position: absolute;
+  top: 20%;
+  left: 28%;
+  rotate: -35deg;
+}
+
+.emoji4{
+  font-size: 100px;
+    position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.love1{
+  /* top: 230%; */
+}
+
+
+.full{
+  border-color: none;
+  border-radius: 5px;
+}
+	/* <div class="love1"><img src="https://mail.google.com/mail/u/0/?ui=2&ik=d947548341&attid=0.1&permmsgid=msg-f:1839116495945443777&th=1985dab58163a9c1&view=fimg&realattid=1985daaeb2fe4a8686e3&disp=thd&attbid=ANGjdJ8p-ZxTfJK1VIDS2AKgMJAfMQ2MDTme8wPv1fa9A0zQ2zghjEH4VswsZR8nNZmsiZXWmyouAqXFfeK_s5PYWxj9ek1DOa4XuV2nq4GGp1FwYgqn9vr7ZS0BbR8&ats=2524608000000&sz=w1920-h922" width="300px" height="330px"></div>
+	<div class="love2"><img src="https://mail.google.com/mail/u/0/?ui=2&ik=d947548341&attid=0.3&permmsgid=msg-f:1839116495945443777&th=1985dab58163a9c1&view=fimg&realattid=1985daaeb2fe4b67fef2&disp=thd&attbid=ANGjdJ9dkbHm1Ktyp8CyRCZOm9C_wGYlEoGhStvlv7ZSR5eDbQgOTzzqJSBkc8Ch7DOhRd6l1c2zYwnBZESP5Me1VK6hAJAX6b30RftGjuivKjNVY-IVa4Jy2O_RUBE&ats=2524608000000&sz=w1920-h922" width="300px" height="330px"></div>
+	<div class="love3"><img src="https://mail.google.com/mail/u/0/?ui=2&ik=d947548341&attid=0.2&permmsgid=msg-f:1839116495945443777&th=1985dab58163a9c1&view=fimg&realattid=1985daaeb2fe4c497701&disp=thd&attbid=ANGjdJ_uzNu4MhzTEyy-BiMmgbnKtUds_a3qBjBv6saRfhUrTl8PCk9VufOMULmaO6ZCObkq2cXTGR4S9vCigKONVbbPcPY1sKT_cSCLvMMmpvi14Vn4g56cMMZS-lQ&ats=2524608000000&sz=w1920-h922" width="300px" height="330px"></div> */
+</style></head><body><!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<input class="full" type="button" value="Fullscreen" onclick="document.documentElement.requestFullscreen()"/>
+	<div class="stickynote">
+		<div>
+			<p style="font-size: 20px">
+				<p>📌</p>1. My wife
+			</p>
+			</p>Happy Girlfriend Day baby I love you 💞💗🌺
+		</div>
+	</div>
+
+	<p class="emoji1" style="  user-select: none;">🌸</p>
+	<p class="emoji2" style="  user-select: none;">🌷</p>
+	<p class="emoji3" style="  user-select: none;">💕</p>
+	<p class="emoji4" style="  user-select: none;">💘</p>
+	<img src="https://www.funny-emoticons.com/files/funny-animals/hello-kitty-emoticons/1009-kitty-angel-4.png">
+	<div class="notescontent">
+		<p>May 4th 25💞</p>
+		<div class="note1">
+			<p>Isaiah 54:10</p>
+			<p>ᡣ˶ᵔ ᵕ ᵔ˶𐭩 ♡</p>
+		</div>
+		<div class="note2">
+			<p style="font-size: 15px;">2. What I love about her</p>
+		</div>
+		<div class="note3" style="width: 290px;">
+			<p>𝗡𝗼𝘄 𝗽𝗹𝗮𝘆𝗶𝗻𝗴:
+				"Michael Jackson - Billie Jean"
+				01:57 ───────●─── 02:55
+				ㅤ◁ㅤ ❚❚ ㅤ▷ ㅤㅤ↻ ♡</p>
+		</div>
+		<div class="note4">
+			<p>My Wife💕 ≽^• ˕ • ྀི≼
+				ﾒ𝟶ﾒ𝟶</p>
+		</div>
+		<div class="note5">
+			<p style="font-size: 15px;">3.<a
+					href="https://www.canva.com/design/DAGusM9VB4A/h7tSojB8hdRa41XODxszHw/edit?utm_content=DAGusM9VB4A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+					target="https://www.canva.com/design/DAGusM9VB4A/h7tSojB8hdRa41XODxszHw/edit?utm_content=DAGusM9VB4A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">click
+					me!</a></p>
+		</div>
+
+	</div>
+
+	<div class="snone"><iframe data-testid="embed-iframe" style="border-radius:12px"
+			src="https://open.spotify.com/embed/track/3iBgrkexCzVuPy4O9vx7Mf?utm_source=generator" width="100%"
+			height="300" frameBorder="0" allowfullscreen=""
+			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+	</div>
+	<iframe class="song1" data-testid="embed-iframe" style="border-radius:12px"
+		src="https://open.spotify.com/embed/track/0lOQaZwX9AkAiSvObh4G70?utm_source=generator" width="%" height="100"
+		frameBorder="0" allowfullscreen=""
+		allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	<iframe class="song2" data-testid="embed-iframe" style="border-radius:12px"
+		src="https://open.spotify.com/embed/track/2dVeoypvYFchwGPZDTs2py?utm_source=generator" width="%" height="100"
+		frameBorder="0" allowfullscreen=""
+		allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	<iframe class="song3" data-testid="embed-iframe" style="border-radius:12px"
+		src="https://open.spotify.com/embed/track/4mL59LVbKgOpEACxraGYdr?utm_source=generator" width="%" height="100"
+		frameBorder="0" allowfullscreen=""
+		allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	<iframe class="song4" data-testid="embed-iframe" style="border-radius:12px"
+		src="https://open.spotify.com/embed/track/5ITV0zqzjOYfFWpW0xBmRa?utm_source=generator" width="" height="152"
+		frameBorder="0" allowfullscreen=""
+		allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	<iframe class="song5" data-testid="embed-iframe" style="border-radius:12px"
+		src="https://open.spotify.com/embed/track/43zr9kKkeiQrshvYuvNtfM?utm_source=generator" width="" height="152"
+		frameBorder="0" allowfullscreen=""
+		allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+
+
+	<div class="more">
+		<div class="card">
+			<div class="card-front">
+				<h1>ﾒ૦ﾒ૦💋</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="text-align: center;"> 16 random things I love about you.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>1</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 15px;">She's very intelligent and educated person.
+							When you talk to her it shows that she's on a different level💫
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>2</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 8px;">I love her smile. Its very warm and palyful. I would describe the
+							feeling a
+							you come back from a long day and you see your favorite snack waiting in the fridge
+							and you get that sense of relief and calmness
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>3</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 10px;"> Speaking of playful. She's a very playful and goofy person once
+							that shyness wears away.
+							You'd realize that its not the same person you met on day one.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>4</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 20px;"> Her nyash 🍑
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>5</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 15px;">
+							She's a very hardworking person both physically,
+							academically, everything -lly.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>6</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 15px;">Her voice is very soothing and calming. It gives me a sense
+							of familiarity and safety.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>7</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 15px;">The things she finds insecurities in 💖.
+							I will love every bit of her inside-out.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>8</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 15px;">When she calls me nicknames. I love it when she calls me her cutie
+							patootie
+							or her cuddly bear.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-front">
+				<h1>9</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 10px;">Shes very helpful actually. Im not sure how to really explain
+							but some of the things she suggested to me
+							I started doing or from the reels/videos she sends me.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>10</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 6px;  font-weight: bold;">She's very pretty ❤️ I think of nature whenever
+							I think of her as pretty.
+							That one feeling when you stumble into an unknown city and
+							you see buildings and the far away view distance and
+							everything is just beautiful and vibey.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>11</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 15px;"> She's weird but my kind of weird.
+							The type of weird I would be but Im afraid to show to people.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>12</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 20px;"> Her body features especially her forhead and her cheeks
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>13</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 20px;">Shes so caring and supportive.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>14</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 20px;">She can cook
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>15</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 20px;">Her fashion sense is cute. I cant wait for her to dress me up 🎀.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-front">
+				<h1>16</h1>
+			</div>
+			<div class="card-back">
+				<div class="card-backk">
+					<div class="fonttt">
+						<p style="font-size: 20px;">🍒🍪
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html><script type="text/javascript">
+
+$(document).ready(function () {
+  $('.card').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('flipped');
+  })
+})
+
+</script></body><html>
